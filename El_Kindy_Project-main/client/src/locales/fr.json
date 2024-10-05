@@ -1,0 +1,96 @@
+{
+  "contact": {
+    "title": "Nous Contacter",
+    "description": "Nous sommes là pour vous aider !",
+    "hours_title": "Heures d'ouverture",
+    "hours_mon_fri": "Lundi - Vendredi : 14h00 - 20h00",
+    "hours_sat_sun": "Samedi - Dimanche : 10h00 - 20h00",
+    "address_title": "Adresse de Contact",
+    "address_line": "24, Rue Manzel Mabrouk Cité Olympique, Tunis",
+    "phone": "Téléphone : 20 669 545",
+    "email": "Email : conservatoireelkindy@gmail.com",
+    "team_title": "Rencontrez Notre Équipe",
+    "founder": "Fondateur",
+    "general_supervisor": "Superviseur Général",
+    "follow_us": "Suivez-nous sur :",
+    "send_message": "Envoyer le Message",
+    "invalid_email_title": "Email Invalide",
+    "invalid_email_text": "Veuillez entrer une adresse e-mail valide.",
+    "success_title": "Succès !",
+    "success_text": "Votre message a été reçu.",
+    "error_title": "Oups...",
+    "error_text": "Quelque chose s'est mal passé !",
+    "form_title": "Parlons ensemble",
+    "form_description": "Pour demander un devis ou pour prendre un café, contactez-nous directement ou remplissez le formulaire et nous vous répondrons rapidement",
+    "form_name": "Votre nom *",
+    "form_email": "Adresse e-mail *",
+    "form_message": "Message *"
+  },
+  "navbar" :{
+    "home": "Accueil",
+    "corsus": "Formations",
+    "Category": "Catégorie",
+    "Courses": "Cours",
+    "InternalShip": "Stage",
+    "Events": "Événements",
+    "Shop": "Boutique",
+    "Preinscription": "Préinscription",
+    "Contact": "Contact",
+    "language": "Langue",
+    "Dashboard": "Tableau de bord",
+    "Edit Profile": "Modifier le profil",
+    "Account Settings": "Paramètres du compte",
+    "Sign Out": "Se déconnecter",
+    "Dark mode": "Mode sombre",
+    "Sign In": "Se connecter"
+  },
+  "sidebar": {
+    "Dashboard": "Tableau de bord",
+    "Pages": "Pages",
+    "Members": "Membres",
+    "Admins": "Admins",
+    "Teachers": "Enseignants",
+    "Students": "Étudiants",
+    "Inscriptions": "Inscriptions",
+    "Category": "Catégorie",
+    "Courses": "Cours",
+    "Planning": "Planning",
+    "Internship": "Stage",
+    "Events": "Événements",
+    "Event Reservations": "Réservations d'événements",
+    "Internship Reservations": "Réservations de stage",
+    "Salle": "Salles",
+    "Classes": "Classes",
+    "Documentation": "Documentation",
+    "Earnings": "Gains",
+    "Account Settings": "Paramètres du compte"
+},
+"sidebarStudent": {
+  "My profile": "Mon profil",
+  "Dashboard": "Tableau de bord",
+  "Meeting En Ligne": "Réunion en ligne",
+  "Planning": "Planning",
+  "Assignment": "Affectation",
+  "Teachers": "Enseignants",
+  "Time Slots": "Plages horaires",
+  "Edit Profile": "Modifier le profil",
+  "Sign Out": "Déconnexion"
+},
+"sidebarTeacher": {
+  "My profile": "Mon profil",
+  "Dashboard": "Tableau de bord",
+  "Create Meeting En Ligne": "Créer une réunion en ligne",
+  "Planning": "Planning",
+  "Assignment": "Affectation",
+  "Messages": "Messages",
+  "Students Grades": "Notes des élèves",
+  "Time Slots": "Plages horaires",
+  "Edit Profile": "Modifier le profil",
+  "Sign Out": "Déconnexion"
+}
+
+
+
+  
+  
+}

@@ -1,0 +1,8 @@
+.cardd{
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .cardd:hover {
+    transform: scale(1.05);
+  }
+  

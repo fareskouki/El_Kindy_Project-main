@@ -1,0 +1,42 @@
+.card-content {
+  background: #ffffff; /* Clean background for better legibility */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Sufficient padding for spacing inside the card */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.card-title {
+  font-size: 1.2rem; /* Appropriate size for titles */
+  color: #333; /* Dark color for better readability */
+  margin-bottom: 0.5rem; /* Space below the title */
+}
+
+.event-dates, .event-place, .event-time {
+  color: #555; /* Slightly lighter than the title for hierarchical contrast */
+  font-size: 0.9rem; /* Smaller font size for details */
+  margin-bottom: 0.5rem; /* Consistent spacing for a clean look */
+}
+
+.fas {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.cardd-layer {
+  margin-top: 1rem; /* Spacing from the last detail to the button */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Bootstrap primary color */
+  border: none;
+  border-radius: 5px; /* Rounded corners for the button */
+  padding: 10px 20px; /* Adequate padding for button size */
+  font-size: 0.8rem; /* Smaller font size for the small button */
+  color: white; /* White text for contrast */
+  text-decoration: none; /* No underline */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover for visual feedback */
+}

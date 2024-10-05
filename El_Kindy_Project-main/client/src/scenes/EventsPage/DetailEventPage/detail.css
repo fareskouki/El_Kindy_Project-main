@@ -1,0 +1,72 @@
+.reservation-form-container {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .btn-primary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .alert {
+    margin-bottom: 20px;
+    animation: fadein 0.5s forwards;
+  }
+  .event-details {
+    margin-bottom: 20px; /* Add margin at the bottom to separate from other content */
+  }
+  
+  .event-title {
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the title bold */
+    color: #333; /* Set color to a dark shade for better readability */
+  }
+  
+  .event-description {
+    font-size: 16px; /* Adjust font size as needed */
+    color: #666; /* Set color to a slightly lighter shade */
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

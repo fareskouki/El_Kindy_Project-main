@@ -1,0 +1,140 @@
+/** @format */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.calendar-day {
+	padding: 16px;
+	background-color: #f9f9f9;
+	color: #333;
+	box-shadow: 0 0.5rem 3rem rgba(89, 76, 121, 0.4);
+	border: 0.2px solid lightgray;
+	margin-bottom: 20px; /* add space between rows */
+  }
+  
+  .custom-table {
+	margin-top: 10px; /* add some space above the table */
+  }
+  
+
+td.gray {
+	background: rgba(64, 64, 65, 0.329);
+}
+
+td.jour {
+	border: 0.2px solid lightgray;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	box-sizing: content-box;
+	font-size: x-small;
+}
+/* Styles généraux */
+thead tr td {
+	font-weight: bold;
+	text-align: center;
+	border: 0.2px solid lightgray;
+	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.mois {
+	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.jour::after {
+	content: '';
+	display: block;
+	position: absolute;
+	margin-left: -2px;
+	color: lightgray;
+}
+.hachure::before {
+	content: ' ';
+	display: block;
+	position: absolute;
+	height: 32px;
+	width: 32px;
+	margin: -4px;
+	background-image: repeating-linear-gradient(
+		-45deg,
+		transparent,
+		transparent 4px,
+		hsla(0, 0%, 100%, 0.4) 0,
+		hsla(0, 0%, 100%, 0.4) 6.6px,
+		transparent 0,
+		transparent 11.2px
+	);
+}
+td.jour1::after {
+	content: 'Lun';
+}
+td.jour2::after {
+	content: 'Mar';
+}
+td.jour3::after {
+	content: 'Mer';
+}
+td.jour4::after {
+	content: 'Jeu';
+}
+td.jour5::after {
+	content: 'Ven';
+}
+td.jour6::after {
+	content: 'Sam';
+}
+td.jour0::after {
+	content: 'Dim';
+}
+
+td.jour {
+	border: 0.2px solid lightgray;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	box-sizing: content-box;
+}
+
+.jour:hover {
+	background-color: #3e607b;
+}
+/* Date début toujours en couleur si sélectionnée */
+td.jour.select-debut {
+	background: #3e607a;
+}
+
+/* Si date début et fin marquées*/
+/********************************/
+/* Tous les td à droite de date début en rouge */
+tr.select-salarie td.jour.select-debut ~ td {
+	background: rgb(95, 95, 252);
+}
+/* tous les td à droite de date fin transparent (ils étaient en rouge à cause de la ligne précédente */
+tr.select-salarie td.jour.select-fin ~ td {
+	background: transparent;
+}
+/* tous les td à droite de date fin et fériés remis en gris */
+tr.select-salarie td.jour.select-fin ~ td.ferie {
+	background: gray;
+}
+
+/* Seulement si date début marquée, si l'utilisateur survole un td sur la même ligne, on va colorier tous les td entre date début et le td survolé */
+/********************************/
+/* Tous les td à droite de date début en couleur */
+tr:hover:not(.select-salarie) td.jour.select-debut:not(:hover) ~ td {
+	background: rgb(95, 95, 252);
+}
+/* si le td survolé est à gauche de date début, on ne colorie rien sauf la date début */
+tr:hover:not(.select-salarie) td:hover ~ td.jour.select-debut:not(:hover) ~ td {
+	background: transparent;
+}
+/* complément de la ligne précédent pour remettre en gris les jours fériés si survol td à gauche de début */
+tr:hover:not(.select-salarie) td:hover ~ td.ferie:not(.select-debut) {
+	background: gray;
+}
+/* nous avions mis en couleur tout ce qui est à droite de date début, on annule ceci pour les td à droite de date début et du td survolé */
+tr:hover:not(.select-salarie) td.jour.select-debut ~ td:hover ~ td {
+	background: transparent;
+}

@@ -1,0 +1,54 @@
+.disabled{
+    background :  grey;
+}
+
+.event-price-container {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    background-color: #f8f9fa;
+    margin-bottom: 20px; /* Provide some space below the section */
+  }
+  
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .price-toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Spacing between checkbox and the input */
+  }
+  
+  .form-check-input {
+    margin-right: 10px; /* Space between checkbox and label */
+    cursor: pointer;
+  }
+  
+  .form-check-label {
+    cursor: pointer;
+  }
+  
+  .price-input {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: none; /* Removing Bootstrap's default box-shadow */
+  }
+  
+  /* Focused state for the input to make it pop */
+  .price-input:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .event-price-container {
+      margin-bottom: 15px;
+    }
+  }
+  
